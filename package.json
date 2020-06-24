@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://dedpass.github.io/rpg-test1/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "vk-miniapps-deploy"
   },
   "keywords": [],
   "author": "",
